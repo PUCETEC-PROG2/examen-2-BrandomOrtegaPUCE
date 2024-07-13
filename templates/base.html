@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ movie.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>{{ movie.title }}</h1>
+    <p><strong>Genre:</strong> {{ movie.genre }}</p>
+    <p><strong>Director:</strong> {{ movie.director }}</p>
+    <p><strong>Release Year:</strong> {{ movie.release_year }}</p>
+    <p><strong>Synopsis:</strong> {{ movie.synopsis }}</p>
+    <a href="{% url 'movie_list' %}">Back to Movie List</a>
+</body>
+</html>

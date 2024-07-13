@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Movies{% endblock title %}
+{% block content %}
+<p class="p-2">Bienvenido al sitio de Películas</p>
+            <ul class="List-Group">
+                {% for movie in movies %}
+                <li class="List-Group-item">
+                    
